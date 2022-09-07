@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let el = document.getElementsByName("input");
+    let el = document.querySelector("#text");
 
     console.log(el);
 });
