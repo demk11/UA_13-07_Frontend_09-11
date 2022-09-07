@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let el = document.querySelector("#text");
-
-    console.log(el.outerHTML);
+    let el = document.getElementById("#list");
+    
+    console.log(el);
 });
