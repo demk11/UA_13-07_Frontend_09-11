@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-    let el = document.getElementById("container");
-    
-    console.log(el);
+    let el = document.getElementById("element");
+    el.remove();
 });

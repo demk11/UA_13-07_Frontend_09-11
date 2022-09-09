@@ -1,3 +1,7 @@
-ul li:nth-child(2) ~ li{
-    color: red;
+#container{
+    border: 1px solid red;
+}
+
+#my_img{
+    border: 5px double brown;
 }
