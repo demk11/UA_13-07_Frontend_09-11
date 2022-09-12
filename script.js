@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", function(){
             p.style.fontSize = "21px";
             
             this.after(p);
+        }else{
+            document.getElementsByTagName("p")[0].classList.toggle("toggle");
         }
-        
+
     });
 
 });
