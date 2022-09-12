@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
         
         if (document.getElementsByTagName("p")[0] == undefined){
             let p = document.createElement("p");
-
+            
             p.textContent = "Hello World!";
 
             p.style.color = "red";
