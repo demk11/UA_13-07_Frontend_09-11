@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     
-    function
+    function helloWorld(){
+        alert("Hello World!");
+    }
 
 });
