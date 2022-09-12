@@ -5,7 +5,20 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     document.getElementById("button").addEventListener("click", function(){
-        helloWorld();
+        
+        if (document.getElementsByTagName("p")[0] == undefined){
+            let p = document.createElement("p");
+
+            p.textContent = "Hello World!";
+
+            p.style.color = "red";
+            p.style.fontStyle = "italic";
+            p.style.fontWeight = "bold";
+            p.style.fontSize = "21px";
+            
+            this.after(p);
+        }
+        
     });
 
 });
