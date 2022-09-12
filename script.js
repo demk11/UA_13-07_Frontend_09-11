@@ -4,4 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){
         alert("Hello World!");
     }
 
+    document.getElementById("button").addEventListener("click", function(){
+        helloWorld();
+    });
+
 });
