@@ -1,22 +1,27 @@
 document.addEventListener("DOMContentLoaded", function(){
-    
-    document.getElementById("button").addEventListener("click", function(){
-        
-        if (document.getElementsByTagName("p")[0] == undefined){
-            let p = document.createElement("p");
-            
-            p.textContent = "Hello World!";
 
-            p.style.color = "red";
-            p.style.fontStyle = "italic";
-            p.style.fontWeight = "bold";
-            p.style.fontSize = "21px";
-            
-            this.after(p);
-        }else{
-            document.getElementsByTagName("p")[0].classList.toggle("toggle");
-        }
 
+    // for (i of document.querySelectorAll("button")){
+    //     i.addEventListener("click", function(){
+    //         this.classList.toggle("clicked");
+    //     });
+    // }
+    document.querySelector("#container").onscroll = function(e){
+        console.log(this.scrollTop);
+    };
+
+    document.querySelectorAll("button").forEach(function(i){
+
+        i.addEventListener("click", function(e){
+            for (j of document.querySelectorAll("button")){
+                j.classList.remove("clicked");
+            }
+
+            this.classList.add("clicked");
+
+            document.querySelector("#container").scrollTop = this.offsetTop;
+            console.log(e);
+        });
     });
 
 });
