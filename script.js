@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    document.querySelectorAll("button").forEach(function(i){
+    document.querySelector("#div1").addEventListener("click", function(){
+        alert('div #1!');
+    }, true);
 
-        i.addEventListener("click", function(e){
-            for (j of document.querySelectorAll("button")){
-                j.classList.remove("clicked");
-            }
+    document.querySelector("#div2").addEventListener("click", function(){
+        alert('div #2!');
+    }, true);
 
-            this.classList.add("clicked");
+    document.querySelector("#div3").addEventListener("click", function(){
+        alert('div #3!');
+    }, true);
 
-            document.querySelector("#container").scrollTo({top: this.offsetTop - 10, behavior: 'smooth'});
-        });
-
-    });
+    document.querySelector("button").addEventListener("click", function(){
+        alert('button!');
+    }, true);
 
 });
